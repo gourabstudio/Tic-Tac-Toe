@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color:  #47476b  ;
+  color: #ffffffff;
+  height: 65px;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  padding-left:15px;
+  font-family: 'Titillium Web', sans-serif;
+}
+nav ul {
+  list-style-type: none ;
+}
+.gamecontainer {
+  padding: 10px;
+  padding-right: 160px;
+  background-color: whitesmoke;
+  display: flex;
+  margin-top:20px;
+  flex-wrap: wrap;
+}
+.container{
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(3,12vw);
+  grid-template-columns:repeat(3,12vw);
+}
+.box{
+  border:1px solid black;
+  font-size: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameinfo{
+  padding: 10px;
+  font-family: 'Titillium Web', sans-serif;
+}
+.gameinfo h1{
+  font-size: 2.0rem;
+}
+.info{
+  font-size: 28px;
+  
+}
+.imagebox img{
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+.bl{
+  border-left: 0;
+}
+.br{
+  border-right: 0;
+}
+.bt{
+  border-top: 0;
+}
+.bb{
+  border-bottom: 0;
+}
+#reset {
+  margin: 15px;
+  padding: 4px;
+  font-size: 24px;
+  background-color: lightpink;
+  border-radius: 6px;
+  font-weight: bolder;
+}
+.footer{
+  text-align: right;
+  margin-right:20px;
+  padding: 5px;
+}
+@media screen and (max-width:400px)
+{
+  .gamecontainer{
+     padding-right: 10px;
+     padding-left: 10px;
+  }
+  .container{
+    grid-template-rows: repeat(3,15vw);
+  grid-template-columns:repeat(3,15vw);
+  }
+}
